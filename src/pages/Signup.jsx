@@ -1,0 +1,16 @@
+import React from 'react'
+import  Template  from '../components/Template'
+import signupImg from "../assets/teacher2.png"
+
+export default function Signup({setIsLoggedIn}){
+  return (
+        <Template
+        title ="Join the millions learning to code with StudyNation for free."
+        desc1 = "Build skills for today, tommorrow, and beyond."
+        desc2 = "Education to future-proof your career."
+        image = {signupImg}
+        formtype = "signup"
+        setIsLoggedIn = {setIsLoggedIn}
+        />
+  )
+}
