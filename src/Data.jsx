@@ -22,7 +22,7 @@ import logo6 from "./assets/logo6.png";
 export const navLinks = [
   {
     id: 1,
-    href: "",
+    href: "StudyNation",
     link: "Home",
   },
   {

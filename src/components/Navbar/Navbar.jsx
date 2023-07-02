@@ -35,7 +35,7 @@ const Navbar = ({isLoggedIn,setIsLoggedIn}) => {
               onClick={() => setToggle(true)}
             />
             <div className="text-xl text-Teal uppercase tracking-wide font-bold">
-            <Link to="/" className='flex align-middle gap-1'>
+            <Link to="/StudyNation" className='flex align-middle gap-1'>
                 <p className='flex items-center text-[16px] xs:text-2xl'><span className='text-Teal'>Study</span><span className='text-white'>Nation</span></p>
         </Link>
             </div>

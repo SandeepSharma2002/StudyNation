@@ -17,7 +17,7 @@ function App() {
     <div className="font-Poppins w-screen h-full min-h-screen bg-Solitude flex flex-col">
       <Navbar isLoggedIn = {isLoggedIn} setIsLoggedIn = {setIsLoggedIn}/>
       <Routes>
-        <Route path="/" element= {<Home isLoggedIn ={isLoggedIn}/>}/>
+        <Route path="/StudyNation" element= {<Home isLoggedIn ={isLoggedIn}/>}/>
         <Route path="/signup" element = {<Signup setIsLoggedIn = {setIsLoggedIn} />}/>
         <Route path="/login" element = {<Login setIsLoggedIn={setIsLoggedIn} />}/>
         <Route path="/dashboard" element= {<PrivateRoute isLoggedIn ={isLoggedIn} ><Dashboard/></PrivateRoute>}/>
