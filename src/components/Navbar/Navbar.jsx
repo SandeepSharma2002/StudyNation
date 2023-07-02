@@ -6,6 +6,7 @@ import NavLink from "./NavLink";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { toast } from "react-hot-toast";
+import TitleLogo from "../../../public/TitleLogo.png";
 
 const Navbar = ({isLoggedIn,setIsLoggedIn}) => {
   const [toggle, setToggle] = useState(false);
@@ -31,11 +32,12 @@ const Navbar = ({isLoggedIn,setIsLoggedIn}) => {
         >
           <div className="flex items-center gap-4">
             <HiMenuAlt1
-              className="text-3xl md:hidden cursor-pointer"
+              className="text-2xl sm:text-3xl md:hidden cursor-pointer"
               onClick={() => setToggle(true)}
             />
             <div className="text-xl text-Teal uppercase tracking-wide font-bold">
-            <Link to="/StudyNation" className='flex align-middle gap-1'>
+            <Link to="/StudyNation" className='flex align-middle gap-1 md:h-8'>
+              <img width={20} height={20} src={TitleLogo} alt="" className="hidden md:flex"/>
                 <p className='flex items-center text-[16px] xs:text-2xl'><span className='text-Teal'>Study</span><span className='text-white'>Nation</span></p>
         </Link>
             </div>
@@ -58,7 +60,7 @@ const Navbar = ({isLoggedIn,setIsLoggedIn}) => {
                 </Link>
             }
              {
-                isLoggedIn && <Link to="/">
+                isLoggedIn && <Link to="/StudyNation">
                 <button className=" py-1.5 px-3 sm:py-3 sm:px-6 font-bold text-sm border border-solid rounded-lg border-gray" onClick={()=>{
                     setIsLoggedIn(false);
                     toast.success("Logged Out");
